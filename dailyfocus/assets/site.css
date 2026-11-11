@@ -128,7 +128,7 @@ section { padding-block: clamp(64px, 9vw, 112px); }
 .faq details p { margin-top: 10px; color: var(--muted); }
 
 /* article cards */
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
 .card { display: grid; gap: 10px; align-content: start; padding: 26px; border-radius: var(--radius); background: var(--paper); border: 1px solid var(--line); text-decoration: none; color: var(--ink); transition: transform .15s ease, border-color .15s ease; }
 .card:hover { transform: translateY(-3px); border-color: var(--violet); }
 .card p { color: var(--muted); font-size: .96rem; }
