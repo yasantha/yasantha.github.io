@@ -65,10 +65,6 @@ section { padding-block: clamp(64px, 9vw, 112px); }
 /* buttons */
 .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px; font: 600 1rem var(--display); text-decoration: none; border: 0; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
 .btn:hover { transform: translateY(-2px); }
-.btn-play { background: var(--ink); color: var(--bg); box-shadow: var(--shadow); }
-.btn-play svg { width: 22px; height: 22px; }
-.btn-play small { display: block; font: 500 .68rem/1 var(--body); opacity: .8; letter-spacing: .04em; text-transform: uppercase; }
-.btn-play span { display: grid; gap: 2px; text-align: left; line-height: 1.1; }
 .btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
 .btn-small, .nav a.btn-small { padding: 9px 16px; font-size: .9rem; background: var(--violet); color: var(--on-violet); }
 .qr img, .brand img { height: auto; }
@@ -143,7 +139,6 @@ section { padding-block: clamp(64px, 9vw, 112px); }
 .cta { background: linear-gradient(160deg, var(--violet), var(--violet-deep)); color: #fff; border-radius: 32px; padding: clamp(32px, 5vw, 60px); display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; }
 .cta h2 { color: #fff; }
 .cta p { color: rgba(255,255,255,.85); margin-top: 12px; max-width: 48ch; }
-.cta .btn-play { background: #fff; color: #1d1940; margin-top: 24px; }
 .qr { background: #fff; padding: 12px; border-radius: 18px; text-align: center; color: #1d1940; font-size: .8rem; font-weight: 600; }
 .qr img { width: 150px; height: 150px; }
 @media (max-width: 720px) { .cta { grid-template-columns: 1fr; } .qr { justify-self: start; } }
@@ -176,3 +171,7 @@ dialog.video button { position: absolute; top: -14px; right: -14px; width: 40px;
 .table-scroll { overflow-x: auto; margin: 18px 0; }
 .crumbs { font-size: .9rem; color: var(--muted); }
 .crumbs a { color: var(--muted); }
+/* Official Google Play badge: keep artwork unmodified, leave clear space */
+.play-badge { display: inline-block; line-height: 0; margin: 4px; border-radius: 8px; }
+.play-badge img { height: 56px; width: auto; display: block; }
+.cta .play-badge { margin-top: 20px; }
